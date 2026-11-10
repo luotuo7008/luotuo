@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="中文美容护肤内容工作台">
+  <title>护肤内容工作台</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">跳到内容</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✦</span><div><strong>护肤工作台</strong><small>内容管理</small></div></div>
+      <div class="nav-label">工作区</div>
+      <nav id="navigation" aria-label="主导航"></nav>
+      <div class="sidebar-foot"><span class="avatar" aria-hidden="true">护</span><div><strong>本地工作区</strong><small>基础版 · v0.1</small></div></div>
+    </aside>
+    <main id="content" tabindex="-1">
+      <div class="topbar"><span>工作区 <span aria-hidden="true">/</span> <strong id="breadcrumb"></strong></span><span class="demo"><i></i>示例数据</span></div>
+      <div class="workspace">
+        <header class="page-heading"><div class="eyebrow" id="eyebrow"></div><h1 id="page-title"></h1><p id="page-description"></p></header>
+        <div id="overview"></div>
+        <section class="panel" aria-labelledby="records-title">
+          <div class="panel-head"><div><h2 id="records-title"></h2><p id="records-caption"></p></div><span id="result-count" role="status"></span></div>
+          <div id="filters"></div>
+          <div id="results"></div>
+        </section>
+        <footer>护肤内容工作台 <span>·</span> 示例资料仅用于演示</footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="dialog-head"><h2 id="detail-title"></h2><form method="dialog"><button class="close" aria-label="关闭详情" autofocus>×</button></form></div>
+    <div id="detail-body"></div>
+  </dialog>
+</body>
+</html>
